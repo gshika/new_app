@@ -1,0 +1,28 @@
+<div id="form">
+<%= form_with model: album do |form| %>
+    <div>
+      <%= form.label :Title %><br>
+      <%= form.text_field :Title %>
+      <% @album.errors.full_messages_for(:Title).each do|message| %>
+        <div>
+          <%= message %>
+        </div>
+       <% end %>
+    </div>
+    <br>
+    <div>
+      <%= form.label :Description %><br>
+      <%= form.text_area :Description %><br>
+      <% @album.errors.full_messages_for(:Description).each do|message| %>
+        <div>
+          <%= message %>
+        </div>
+        <% end %>
+    
+    </div>
+  <br>
+    <div>
+      <%= form.submit :class => 'submit'%>
+    </div>
+  <% end %>
+  </div>

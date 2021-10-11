@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
+*{
+    font-family:'Roboto', sans-serif;;
+}
+h1{
+    color: black;
+    text-align: center;
+}
+table{
+    margin: auto;
+}
+#edit{
+   
+    background-color:blue;
+    color: #fff;
+}
+#delete
+{
+    background-color:green;
+}
+#show
+{
+    background-color:orange;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+a:hover{
+    background-color: black;
+}
+#new{
+    background-color:green;
+    width: 8vw;
+    height: 3vh;
+    text-align: center;
+    border-radius: 3px;
+    margin: auto;
+    margin-top:10px;
+    padding: 5px;
+}
+#new a:hover{
+    background-color:blue;
+}
+#new:hover{
+    background-color: blue;
+}
+#form{
+    margin: auto;
+    background-color: rgb(223, 223, 119);
+    width: 250px;
+    border:1px solid black;
+    padding: 10px;
+    border-radius: 4px;
+}
+.submit{
+    background-color: blue;
+    border:none;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+}
+.submit:hover{
+    background-color: green;
+}

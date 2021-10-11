@@ -1,0 +1,41 @@
+<h1>All RECORDS</h1>
+<div id="table">
+    <table border="1">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Created_date</th>
+            <th>Edit</th>
+            <th>Delete</th>
+            <th>Show</th>
+        </tr>
+    <thead>
+    <% @albums.each do |album| %>
+    <tr>
+    <td>
+    <%= album.Title %>
+    </td>
+        <td> <%= album.Description %></td>
+        <td> <%= album.created_at %></td>
+        <td id="edit"> <%= link_to "Edit", edit_album_path(album) %> 
+        </td>
+        <td id="delete">
+        <%= link_to "Delete", album_path(album), method: :delete%> 
+        </td>
+        <td id="show">
+        <%= link_to "show", album_path(album)%> 
+        </td>
+    </tr>
+    <% end %>
+    </table>
+
+    <div id="new">
+    <%= link_to "Add New Album", new_album_path %> <br>
+    </div>
+</div>
+
+
+
+
+
